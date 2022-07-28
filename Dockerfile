@@ -1,4 +1,4 @@
 FROM openjdk
-COPY target/*.war /
+COPY webapp/target/*.war .
 EXPOSE 8080
-ENTRYPOINT ["java","-jar",".war"]
+ENTRYPOINT ["java","-jar","webapp.war"]
