@@ -1,5 +1,5 @@
 ---
-- hosts: demo
+- hosts: localhost
   become: yes
 
   tasks:
