@@ -12,11 +12,11 @@
       ignore_errors: yes
 
     - name: remove current docker image
-      command: docker rmi amitanand123/simple-devops-image:latest
+      command: docker rmi amitanand123/simple-devops-image:v1
       ignore_errors: yes
 
     - name: pull docker image from dockerhub
-      command: docker pull amitanand123/simple-devops-image:latest
+      command: docker pull amitanand123/simple-devops-image:v1
 
     - name: creating docker container using simple-devops-image
-      command: docker run -d --name simple-devops-container -p 8080:8080 amitanand123/simple-devops-image:latest
+      command: docker run -d --name simple-devops-container -p 8080:8080 amitanand123/simple-devops-image:v1
